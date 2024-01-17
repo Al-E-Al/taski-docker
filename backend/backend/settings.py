@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-j_89af+30&&4qm*8z9_(^zz8p4-ho8z_m6ylm0s$h!-p@on1_^
 DEBUG = True
 
 # ALLOWED_HOSTS = []
-# ALLOWED_HOSTS = ['158.160.73.175', '127.0.0.1', 'localhost', 'https://kitikit.myddns.me']
+# http://158.160.73.175:8000 работает
 ALLOWED_HOSTS = ['158.160.73.175', '127.0.0.1', 'localhost', 'https://iskiiskt.myddns.me']
 
 # Application definition
@@ -67,7 +67,7 @@ DATABASES = {
         'NAME': os.getenv('POSTGRES_DB', 'django'),
         'USER': os.getenv('POSTGRES_USER', 'django'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', ''),
-        'HOST': os.getenv('DB_HOST', ''),
+        'HOST': os.getenv('DB_HOST', 'db'),
         'PORT': os.getenv('DB_PORT', 5432)
     }
 }
